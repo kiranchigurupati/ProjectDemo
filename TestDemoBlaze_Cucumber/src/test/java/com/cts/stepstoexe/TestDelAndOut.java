@@ -19,7 +19,7 @@ public class TestDelAndOut {
 	
 	@Given("^user launches Chromebrowser$")
 	public void user_launches_Chromebrowser() throws Throwable {
-		dao.launch();
+		////dao.launch();
 		logger.debug("launches the browser");
 	  
 	}
