@@ -23,9 +23,9 @@ public class DelAndOut {
 	By Password = By.id("loginpassword");
 	By Submit = By.xpath("//button[contains(text(),'Log in')]");
 	By Product = By.xpath("//a[contains(text(),'Nokia lumia 1520')]");
-	By addcart = By.xpath("//a[@class='btn btn-success btn-lg']");
-	By cart = By.xpath("//a[contains(text(),'Cart')]");
-	By delcart = By.xpath("S");
+	By addcart = By.xpath("//div[2]//div[1]//a[1]");
+	By cart = By.xpath("//li[4]//a[1]");
+	By delcart = By.partialLinkText("Dele");
 	By logout = By.xpath("//a[@id='logout2']");
 
 	public void launch(String browser, String url) // lauching the application
@@ -78,9 +78,7 @@ public class DelAndOut {
 		Thread.sleep(5000);
 		Alert alert = driver.switchTo().alert();
 		alert.accept();
-		
-		
-		driver.findElements(delcart).get(0).click();
+		driver.findElement(delcart).click();
 	}
 
 	public void logout() {

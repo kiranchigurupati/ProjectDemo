@@ -59,5 +59,14 @@
 	<classpathentry kind="lib" path="E:/poi-4.1.2/ooxml-lib/curvesapi-1.06.jar"/>
 	<classpathentry kind="lib" path="E:/poi-4.1.2/ooxml-lib/xmlbeans-3.1.0.jar"/>
 	<classpathentry kind="src" path="/demo_log4j"/>
+	<classpathentry kind="lib" path="C:/Users/admin/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar" sourcepath="C:/Users/admin/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="info.cukes"/>
+			<attribute name="maven.artifactId" value="cucumber-java"/>
+			<attribute name="maven.version" value="1.2.5"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

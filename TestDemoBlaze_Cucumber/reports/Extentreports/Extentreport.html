@@ -36,7 +36,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -46,7 +45,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Apr 11, 2020 05:42:06 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Apr 12, 2020 11:37:09 AM</span>
 			</a>
 		</ul>
 	</div>
@@ -62,8 +61,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -117,10 +114,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -131,10 +128,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -145,10 +142,10 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='20%'><span class='strong'>1</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>5</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='20%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='60%'>3</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -166,11 +163,11 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Demoblaze website</span>
-						<span class='test-time'>Apr 11, 2020 05:42:07 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Apr 12, 2020 11:37:09 AM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -179,54 +176,34 @@
     <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
     <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='scenario node' test-id='2' status='fail'>
+<div class='scenario node' test-id='2' status='pass'>
     <div class='category-list'>
         <span class='category label'>@TestCase5_Demoblaze</span>
     </div>
-    <span class='duration right label'>0h 0m 17s+195ms</span>
+    <span class='duration right label'>0h 2m 9s+370ms</span>
     <div class="bdd-test">
-        <div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario: Delete and logout</div>
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Delete and logout</div>
     </div>
     <ul class='steps'>
         <li test-id='3' class='node given pass' status='pass'>
             <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given user launches Chromebrowser</div>
                 <div class="node-step">passed</div>
         </li>
-        <li test-id='4' class='node when fail' status='fail'>
-            <div class="step-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>When user login to the page and select the product</div>
-                <textarea disabled class="code-block">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please fill out Username and Password.}
-  (Session info: chrome=80.0.3987.163): Please fill out Username and Password.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'KIRAN-PC', ip: '192.168.0.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53279}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7886d2230d5fc9bbce2f67484d916ab3
-*** Element info: {Using=xpath, value=//a[contains(text(),'Nokia lumia 1520')]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.cts.pages.DelAndOut.login(DelAndOut.java:45)
-	at com.cts.stepstoexe.TestDelAndOut.user_login_to_the_page_and_select_the_product(TestDelAndOut.java:30)
-	at ?.When user login to the page and select the product(src/main/resources/feature/Test.feature:73)
-</textarea>
+        <li test-id='4' class='node when pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When user login to the page and select the product</div>
+                <div class="node-step">passed</div>
         </li>
-        <li test-id='5' class='node and skip' status='skip'>
-            <div class="step-name"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And the user delete the product from the cart</div>
-                <div class="node-step">skipped</div>
+        <li test-id='5' class='node and pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And the user delete the product from the cart</div>
+                <div class="node-step">passed</div>
         </li>
-        <li test-id='6' class='node then skip' status='skip'>
-            <div class="step-name"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then user will logout from site</div>
-                <div class="node-step">skipped</div>
+        <li test-id='6' class='node then pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then user will logout from site</div>
+                <div class="node-step">passed</div>
         </li>
-        <li test-id='7' class='node then skip' status='skip'>
-            <div class="step-name"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then captures screenshot</div>
-                <div class="node-step">skipped</div>
+        <li test-id='7' class='node then pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then captures screenshot</div>
+                <div class="node-step">passed</div>
         </li>
     </ul>
 </div>
@@ -274,13 +251,13 @@ Session ID: 7886d2230d5fc9bbce2f67484d916ab3
 					<div class='category-heading'>
 						<span class='category-name'>@Demoblaze</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -294,9 +271,9 @@ Session ID: 7886d2230d5fc9bbce2f67484d916ab3
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 11, 2020 05:42:07 PM</td>
+										<td>Apr 12, 2020 11:37:09 AM</td>
 										<td class='linked' test-id='1'>Demoblaze website</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -307,13 +284,13 @@ Session ID: 7886d2230d5fc9bbce2f67484d916ab3
 					<div class='category-heading'>
 						<span class='category-name'>@TestCase5_Demoblaze</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -327,9 +304,9 @@ Session ID: 7886d2230d5fc9bbce2f67484d916ab3
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 11, 2020 05:42:07 PM</td>
+										<td>Apr 12, 2020 11:37:09 AM</td>
 										<td class='linked' test-id='2'>Demoblaze website.Delete and logout</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -345,82 +322,7 @@ Session ID: 7886d2230d5fc9bbce2f67484d916ab3
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.UnhandledAlertException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Apr 11, 2020 05:42:17 PM</td>
-										<td class='linked' test-id='4'>Demoblaze website.Delete and logout.When user login to the page and select the product</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please fill out Username and Password.}
-  (Session info: chrome=80.0.3987.163): Please fill out Username and Password.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'KIRAN-PC', ip: '192.168.0.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53279}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7886d2230d5fc9bbce2f67484d916ab3
-*** Element info: {Using=xpath, value=//a[contains(text(),'Nokia lumia 1520')]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.cts.pages.DelAndOut.login(DelAndOut.java:45)
-	at com.cts.stepstoexe.TestDelAndOut.user_login_to_the_page_and_select_the_product(TestDelAndOut.java:30)
-	at ?.When user login to the page and select the product(src/main/resources/feature/Test.feature:73)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -446,19 +348,19 @@ Session ID: 7886d2230d5fc9bbce2f67484d916ab3
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Apr 11, 2020 05:42:06 PM</div>
+					<div class='panel-lead'>Apr 12, 2020 11:37:09 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Apr 11, 2020 05:42:25 PM</div>
+			 		<div class='panel-lead'>Apr 12, 2020 11:39:27 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 18s+661ms</div>
+					<div class='panel-lead'>0h 2m 18s+612ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -475,20 +377,20 @@ Session ID: 7886d2230d5fc9bbce2f67484d916ab3
 						</tr>
 						<tr>
 							<td>@Demoblaze</td>
-							<td>0</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 						<tr>
 							<td>@TestCase5_Demoblaze</td>
-							<td>0</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 					</table>
@@ -503,38 +405,38 @@ Session ID: 7886d2230d5fc9bbce2f67484d916ab3
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				childCount: 1,
-				passChild: 0,
-				failChild: 1,
+				passChild: 1,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 0,
 				grandChildCount: 5,
-				passGrandChild: 1,
-				failGrandChild: 1,
+				passGrandChild: 5,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 3,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 4,
+				exceptionsGrandChild: 0,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "Demoblaze website":17.195
+			        "Demoblaze website":129.37
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/c23457b/v3html/js/extent.js' type='text/javascript'></script>
